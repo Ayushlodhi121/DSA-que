@@ -79,6 +79,21 @@ void insert_sp(int pos, int x)
     }
 }
 
+void delete_beg()
+{
+    if (head != NULL)
+    {
+        ptr = head;
+        head = head->next;
+        free(ptr);
+        count--;
+    }
+    else
+    {
+        printf("List is Empty");
+    }
+}
+
 void traverse()
 {
     if (head != NULL)
@@ -99,6 +114,5 @@ int main()
     insert_end(13);
     insert_end(14);
     insert_end(15);
-    insert_sp(,65);
     traverse();
 }
