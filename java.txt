@@ -1,0 +1,314 @@
+                    ********************HISTORY OF JAVA**********************
+
+Java is built by green team at sunmicrosystem by james gosling. In that time the goal of java creation is for 
+set-top boxes and for television.
+James gosling wanted to make a programming language for televisions but due to passes of time james goasling 
+want to connect their language to the internet . So they work hard on it and make java capable for run on
+ internet or world wide web. In 1995 James Gosling release java.
+
+NAMING OF JAVA ->
+
+Firstly it is called GREENTALK by James Gosling and the file extension was .gt . After that it was publicly
+ called OAK. (OAK is a symbol of strength and also it is a national tree of USA, Germany, France, Romania).
+In 1995 OAK was renamed by java because it was already trade mark of OAK technologies.
+Java is an island in indonasia where the first coffee was produced named java.
+Java name was chosen by James Gosling while having a cup of coffee near by his office.
+
+WHY JAVA IS USED FOR APPLICATIONS ->
+
+Java is a simple, portable, secure, platform independence, robustness, object orientation, high performance ,
+multithreded. These features make java to make a wide range of applications.
+These features helps java to switch television language to the run on internet or browser.Now java is used for 
+window applications, mobile applications, web applications, enterprise applications, cards.
+
+
+            *************************DIFFERENCE BTW C++ AND JAVA********************************
+
+1. Java is platform independent while c++ is platform dependent.
+2. C++ is mainly used for system programming and java is mainly used for applications like windows, enterprise,
+   mobile and web applications.
+3. C++ supports GOTO statement but Java doesn't supports GOTO statement.
+4. C++ supports multiple inheritance but Java doesn't supports multiple inheritance through a class. It can be 
+   achived by Interfaces.
+5. C++ supports operator overloading but Java doesn't.
+6. C++ supports Pointers , you can write Pointers program in C++ but in Java you cannot write Pointers programm
+    in java but java supports Pointers internally for memory management.
+7. C++ used only compiler. C++ programm converted source code to byte code through compiler directly, thats why C++ is
+    platform dependent but in case of java , java source code first converted into byte code due to compilation time
+    then this code is executed by interpreter line by line with the help of JVM. Due to this facility Java is
+    platform independent.
+8. C++ supports call by value and call by refrence both but java supports only call by value.
+9. C++ supports structures and union both but Java doesn't supports.
+10. C++ does not have own thread it is access by third party libraries but java has built in threads.
+11. C++ supports Virtual keyword so that we can decide wether or not override a function but in case of Java,
+    Java does not support Virtual keyword we can override always not static methods. 
+12. C++ is less secure because of pointers but java is more secure because it does not have pointers.
+13. C++ is more faseter than Java due to direct comiplation.
+
+            *******************FEATURES OF JAVA*************************
+        
+The primary goal of creating Java programming language was to make a language that will be simple, secure and portable. 
+
+1. Simple  2. Portable  3. Secure  4. High Performance  5. Object Oriented 
+ 6. Robust  7. Interpreted  8. Dynamic  9. Multithreaded  10. Platform independent 
+
+            *****************BASIC PROGRAM OF JAVA ***********************
+
+public class index{
+    public static void main(String args[]){
+        System.our.println("Hello World");
+    }
+}
+
+Public -> It is an access modifier that means it is accessble for all.
+Class -> For declaration of a class
+Static -> It is a keyword . Method that we declare static called static method. In java we declare main method as a static method 
+          because there will not need to create object of this class . It saves memory .
+Void -> It is a return type . It means it will not return any value.
+Main() -> Is is a starting point of every Java program.
+String[] args -> String[] args allows you to receive input from the command line when your Java program starts.
+System.out.println() -> It is used to print statement on the console . Where System is class , out is an object of Printstream class 
+                         and println is a method of Printstream class.
+
+             *******************JDK JRE JVM*****************************
+
+JVM -> JVM stands for Java Virtual Machine . It provides runtime environment for execution of java program. In JVM has interpreter 
+       that interpreted java bytecode line by line thats why java is platform independent because of this JVM. 
+
+JRE -> Java Runtime Environment is a set of software tools that are used for developing Java applications. It is used to provide 
+        run time environments.
+
+JDK -> Java Development Kit is a software development environment that is used to develop java applications.
+
+
+                 ************************VARIABLES IN JAVA*************************
+
+Variable -> A variable is a container which store the value and data of program . It has a specific data type.
+
+1. Local 
+2. Instance 
+3. Static
+
+1. Local -> Variable which declares inside the body of the method is called Local variable. We can use these variables only
+            inside the methods. It cannot be define as static variable.
+2. Instance -> Variable which declares inside the class but outside the method is called instance variable. 
+3. Static -> A variable that declares with static keyword is called static variable. It cannot be local. we can create a single copy of 
+             the static variable and share among all the instances of the class. Memory allocation for Static  variables only once
+             when the class is loaded.
+
+
+            ******************* DATA TYPES IN JAVA ********************************
+
+Java is a statically type programming language because we have to declare the variable type and name before their use.
+DATA TYPE -> Data type specify which type of data we can store in the variable. 
+
+                               TYPES
+                            
+       PRIMITIVES                                NON - PRIMITIVES
+       1. BYTE                                   1. CLASSES
+       2. SHORT                                  2. STRINGS
+       3. INT                                    3. INTERFACES
+       4. LONG                                   4. ARRAYS
+       5. FLOAT
+       6. DOUBLE
+       7. BOOLEAN
+       8. CHAR
+
+1. Boolean -> Size 1 bytes (8 bits) . Default value False.
+2. Byte -> 1 byte (8 bits ) Range (-128 to 127) . default value 0
+3. Short -> 2 byte (16 bits) Range (-32,768 to 32,767) . default value 0
+4. Int -> 4 byte (32 bits) Range (-2,147,483,648 to 2,147,483,647). default value 0
+5. Long -> 8 byte (64 bits) Range (- 9,223,372,036,854,775,808 to  9,223,372,036,854,775,807) . Its default value is 0.0L or 0.0l.
+6. Float -> 4 byte (32 bits) Its default value is 0.0f or 0.0F.
+7. Double -> 8 byte (64 bits) Its default value is 0.0.
+8. Char -> 2 byte (16-bits)
+
+
+             *********************** OPERATORS IN JAVA *******************
+
+1. Arithmetic ->   + - * / %
+2. Unary -> Unary Plus (+), Unary Minus (-), ++, --, !(It is used to convert boolean value)
+3. Relational / Conditional -> <, >, <=, >=, ==, !=
+4. Assignment -> =, +=, *=, /=, %=
+5. Shift -> Left Shift (<<), Right Shift (>>)
+6. Bitwise -> |, &, ^, ~
+7. Ternary -> Ex. (a<b)?a:b; 
+8. Logical -> &&, ||, !
+
+             ************************ CONTROL STATEMENTS ******************
+        
+1. if-else
+2. switch 
+3. for loop
+4. for each
+5. while
+6. do while
+7. break
+8. continue 
+9. comments
+
+
+            ************************* WAYS OF TAKING USER INPUTS *******************
+
+1. Scanner Class
+2. BufferedReader
+3. console
+4. Command Line Arguments
+5. JOption Pane -> It shows an input pannel on the screen
+
+
+           ************************** OOPS CONCEPTS ********************************
+
+Object Oriented Programming is a programming paradigm where everything is treated as an object. 
+Object Oriented Programming paradigm provides such as inheritance , data binding and ploymorphism . 
+Java is a fully Object Oriented Programming language except PRIMITIVE types because Java has 8 primitive data types and these are not 
+objects . These are directly handeled by JVM . 
+They are : byte, short, int, long, double, float, boolean, char.
+
+Object Oriented Programming aims to implement a real world entity like objects, classes, abstraction, inheritance, polymorphism.
+Benifits of OOPS -> Code modularity, reusability, maintanability.
+
+ PILLERS OF OOPS-> 
+                  1. Object
+                  2. Class
+                  3. Inheritance
+                  4. Polymorphism
+                  5. Encapsulation
+                  6. Abstraction
+ 
+ Apart from these concepts OOPS has another terms -> Coupling, Cohesion, Association, Aggregation, Composition
+
+ 
+1. OBJECT -> An object in java is an instance of a class. They provide a modular and structured approach to 
+             programming by encapsulating data and behaviour.
+             A class is a model or a tamplate that is a combination of data and behaviour that can have object 
+             of that class in terms of properties and methods.
+             A class is like a design of a house and the object is an actual implementation of that design.
+
+             
+
+        It is a keyword that create the memory for that object
+                               ^
+             Ex -> Person p = new Person();
+                     ^               ^
+                   Class         Constructor
+
+
+2. CLASS -> A Class is a collection of data members and member functions where data member are the variables and member functions
+            are functions that performs the operations on these data members.
+            A class is can be called a logical tamplate for creation of object which share there all the properties and 
+            behaviour for all the instance of that class.
+
+            Syntax-> 
+                    <access specifire> class_name{
+                        //variables
+                        //methods
+                    }
+
+CONSTRUCTOR -> It is a special type of function of a class . Its name is same as class name . It does'nt 
+               have any return type. 
+               It is automaatically called when we declare an object of a class. Constructor allocates the 
+               memory for objects and provides all the properties of a class for the objects.
+
+
+TYPES->
+               1.Compiler Defined default Constructor
+               2.User Defined ->
+                               1. Default Constructor
+                               2. Parameterized Constructor
+                               3. Copy Constructor -> A copy constructor is a special constructor in C++ which 
+                               creates a new object as a copy of an existing object.
+
+
+                  ***************** STATIC KEYWORD **********************
+
+Static keyword in java mainly used for memory management . We can use static keyword with variables, methods, 
+        blocks and nested classes.
+    
+
+STATIC VARIABLE -> When we declare a variable static so it will be same for all the instance of that particular class.
+                   We can access this variable by using classname like: class_name.var_name;
+
+                   When we declare a variable static so it will create a memory in heap and share this memory and same value for all
+                   the instance of class.
+                               
+STATIC METHODS -> When we declare a method static is called static method. In static method we only use static variables. But 
+                  if we want to use instance variable in a static method so we have to pass instance of that class where
+                  we want to use this method. Then we can use instance variables in a static method.
+                  We can static method with the help of there class name.
+                  Static methods can be overloaded but cannot be override.
+                  We cant use THIS and SUPER keyword in a static method.
+
+STATIC WITH CLASS -> In java we cant use static keyword with classes. But we can use it in nested classes but not top class.
+                     In this condition we can access nested classes using outer classes.
+                     otherwise we cants access nested classes.
+                     Ex. -> outer.inner
+
+STATIC WITH BLOCKS -> When we declare a block as static so it will be executed when class is load in JVM.
+                      We can use only static variables in this static block.
+
+
+
+                ************** THIS KEYWORD **********************
+
+This keyword is used to eliminate the ambiguty between local variable and instance variable when they are same name.
+We use this keyword with that variable so it specify the instance variable.
+
+class myclass{
+    int a,b;
+    void fun(int a, int b){
+        this.a = a;
+        this.b = b;
+    }
+}
+
+              ************** INHERITANCE ***************
+
+When we aquire / access the properties of another class is called inheritance.
+A class which aquire the properties and behaviour of another class is called base/child/derived on the other hand this class aquire the 
+properties from which class is called super/parent/base class.
+
+TYPES -> 1. Single
+         2. Multiple
+         3. Multilevel
+         4. Hybrid
+         5. Herarichal
+
+1. SINGLE -> A class which have only single base class.
+
+                 Parent Class
+                     ||
+                 Child Class
+
+2. Multiple -> When a single child class inherit multiple parent classes. But in java it is not possible.
+               Because it creates ambiguty. It is done by interfaces.
+
+3. Multilevel -> When a class inherit another class , that class is also inherit another.
+
+                A
+                ||
+                B
+                ||
+                C
+
+4. Hybrid ->  Combination of multiple inheritance.
+
+            
+5. Herarichal -> When multiple classes are inherited by a single parent class.
+
+
+
+            *************** This and Super method in java ******************
+
+SUPER Method -> Every class constructor have default super() method that call the constructor of its parent class when this class extends its 
+parent class. In case of parent class it call the object class constructor because every parent class is a child of object class.
+
+This Method-> We can call the another constructor using this() method in a class.
+
+
+             ************** Method Overloading *********************
+
+When we inherit a parent class so all the methods will be inherit in child class . When we change the content of a method that is also
+present in parent class and all the paremeters, return type and name of method is same so this process is called method overriding.
+
+             
