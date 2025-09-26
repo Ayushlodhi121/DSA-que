@@ -1,0 +1,255 @@
+Database -> A database is a shared collection of logical related data and description of these data desgine to meet the information need to an organization.
+
+IMPORTANCE OF DATABASE
+1. Data storage -> A database is used to store large amount of structure data making it easily, accessible, searchable and retrivable.
+2. Data analysis -> A database can be used to perform complex data analysis generate reports and provide insights into the data.
+3. Records Copying -> A database is often used to keep track of important records such as financial transaction , customer information.
+4. Web applications -> 
+
+
+
+TYPES OF DATABASES
+
+1. Relational db -> Also known as sql database . this database use a relational model to organize data into tables with rows and columns .
+ex. -> sql, oracle, microsoft asscrss, excel, access.
+2. No sql database - > These database are designed to handle large amount of unstructured or semi structured data such as 
+documnets file, images, audio or videos. 
+ex. -> mongo db.
+3. Column db -> THese db store data in columns rather than rows .
+ex. -> amazon red shift
+4. Graph -> These db are used to store and query graph structured data such as social networks connections or recomandations system.
+ex.-> Amazon neptuen.
+5. Key value db-> these db store data as a collection of key name and key values.
+ex-> amazon dynamo db
+
+Relational database -> 
+ id    st_name    st_course     st_fees
+ 1     Ram         Java         10000
+ 2     A           C            20000
+ 3     B           C++          Null
+ 4     C           Py           15000
+
+Column -> Attributes, Field.
+Rows -> Tupple , records.
+No. of columns -> set of columns
+No. of rows -> set of rows.
+
+DBMS -> A dbms is a software system that provides the interfaces and tools needed to store , organize and manage data in a database or DBMS act 
+as a intermediate between the database and the applications or users that access the data stored in the database.
+
+Order->
+USER     USER     USER    USER    USER
+          APPLICATIONS
+            DBMS
+            O.S
+          HARD DISK 
+
+KEYS -> A key in a database is Attributes or a set of Attributes that uniquely identify a row (tupple) in a tables .
+Types -> 
+    Super key,
+    candidate , 
+    primary * ,
+    alternate ,
+    composite ,
+    surrogate , 
+    foreign *
+  
+1. Super Key -> It is a set of all the possible combination of Attributes. 
+ex. sid + sname, sid+ semail
+2. candidate -> It is a minimal super key or only single attribute not combination . 
+3. Primary - > only single attribute, no duplicatea, no blank, less length , numeric 
+4 . Alternate -> rest of keys that not be primary.
+5. composite key-> combination of two keys that makes primary keys.
+6. surrogate -> that add after 
+7. foreign -> It is a primary key of another table.
+
+
+SQL -> SQL stands for structure query language . It is a standard language used to store, access, manage and manipulate
+       data in relational database management system such as Mysql, Oracle, Sql Server and PostgreSql.
+
+
+       How SQL works
+
+Write SQL Queries -> Send to Server -> Execute Query -> Return Result
+
+SQL Commmands -> SQL Commands are isntructions used to communicate with database . They are used to create , modify ,
+                 retrive, and manage data in a Relational database management system.
+Types of SQL Commands
+->DDL
+->DML
+->DQL
+->TCL
+
+1. DDL(Data Definition language) -> This commands consists of all the commands for creation, updation or deletion of database 
+                                    or table.
+
+     a. Create -> This commands is used to create new database or table.
+     b. Alter -> This command is used to modify existing databse or table.
+     c. Drop -> This command is used to delete database or table object.
+     d. Truncate -> This command is used to remove all the rows from a table.
+
+2. DML (Data Manipulation Language) -> Data Manipulation Language consists of all the commands for manipulate the data of a table.
+   
+     a. Create -> This command is used to create new rows in a table and add rows in table.
+     b. Select -> This command is used to retrive the data from a table.
+     c. Delete -> This command is used to delete data and row from a table.
+     d. Update -> This command is used to update data in a table.
+
+3. DCL (Data Control Language) -> DCL command consists commands for control access, security and permissions in database.
+  
+     a. Grand -> Used to give permissions to a user.
+     b. Revoke -> Used to remove permissions from a user.
+
+4. TCL (Transaction Control Language) -> Transaction command are used to control the transaction in a databse.
+
+     a. Comit -> Save database changes and end Transaction.
+     b. ROllback -> Undo all changes that are not comit and end transaction.
+
+
+                                                            Cardinality
+
+Cardinality in database relationship refers to the number of occerence of an entity in a relationship with another entity.
+    1) One to One           2) One to Many          3) Many to One          4)Many to Many
+
+    1)One to One :- In this entity of set A is connected to atleast one entity of set B.  OR    One row of table A is connected to atleast one row of another table.
+
+    2)One to Many :- In this entity of set A is connected to multiple entity of set B. 
+
+    3)Many to One :- In this multiple entity of set A is connected to one entity of set B.
+
+    4)Many to Many :- In this multiple entity of set A is connected to multiple entity of set B.
+
+
+
+    ******************** DDL COMMANDS ***************************
+
+1. Create -> 
+            CREATE DATABASE database_name;
+            CREATE TABLE table_name(col1_name DATATYPE(len),col2_name DATATYPE(len),col2_name DATATYPE(len));
+
+2. DROP -> 
+          DROP DATABASE database_name;
+          DROP TABLE table_name;
+3. TRUNCATE -> 
+             TRUNCATE TABLE table_name;
+
+4. ALTER -> 
+              1. ADD NEW COLUMN ->
+
+                                ALTER TABLE table_name ADD COLUMN col_name DATATYPE(LEN);
+
+              2. CHANGE DATATYPE OF A COLUMN -> 
+
+                                ALTER TABLE table_name MODIFY COLUMN col_name NEW_DATATYPE(NEW_LEN);
+
+              3. DROP COLUMN -> 
+
+                                ALTER TABLE table_name DROP COLUMN col_name;
+
+              4. CHANGE COLUMN NAME ->
+
+                                ALTER TABLE table_name CHANGE old_col_name new_col_name NEW_DATATYPE(NEW_LEN);
+
+              5. CHANGE TABLE NAME -> 
+                                 
+                                ALTER TABLE table_name RENAME  new_table_name;
+
+                                      
+*********************CONSTRAINTS*********************
+
+In sql constraints are rules that applies on column or table to maintain data integrity and ensure that 
+only valid data gets stored in the database.
+
+1. NOT NULL -> CREATE TABLE table_name(column_name1 DATATYPE(LEN),column_name1 DATATYPE(LEN) NOT NULL);
+               null value will not insert
+
+2. UNIQUE -> CREATE TABLE table_name(column_name1 DATATYPE(LEN) UNIQUE,column_name1 DATATYPE(LEN) NOT NULL);
+               only unique value will allow
+
+3. PRIMARY KEY -> CREATE TABLE table_name(column_name1 DATATYPE(LEN) UNIQUE,column_name1 DATATYPE(LEN)PRIMARY KEY);
+              so in that case unique or not null value will allow for insertion
+              UNIQUE or NOT NULL constraints can make PRIMARY KEY.
+
+4. AUTO INCREMENT -> With the help of that constraint we can do auto increment the value of column. In this condition 
+                     we have to set one time column value(it must), then this constraint auto increment the value.
+
+5. DEFAULT -> This constraint set the default value of column when value is null.
+
+6. FOREIGN KEY -> It is make by using another table primary key. we can use another table primary key data. we cannt 
+               override these primary key data.
+
+     
+
+7. CHECK -> This constraints is used to apply condtions on column for data integrity.
+
+
+                *********************DML COMMAND************************
+
+Data Manipulation Language
+
+1.INSERT -> We have three ways to insert data in a SQL table.
+            1. Using column name -> 
+                           SYNTAX -> INSERT INTO table_name (col1_name, col2_name, col3_name,.....)
+                                             VALUES (value1, value2, value3,.....);
+            2. Without using column name ->
+                             SYNTAX -> INSERT INTO table_name VALUES(value1, value2, value3,.....);
+            3. Insertion of multiple rows -> 
+                             SYNTAX -> INSERT INTO table_name(col1_name,col2_name,col3_name,....) 
+                                        VALUES(value1,value2,value3,.....),
+                                        (value1,value2,value3,.....),
+                                        (value1,value2,value3,.....);
+
+2. DELETE -> 
+            SYNTAX -> DELETE FROM table_name WHERE col_name = value;
+
+        In this query we have to provide unique column name and unique column value otherwise it will 
+        delete multiple values from a table because they will be same.
+
+3. UPDATE -> 
+             SYNTAX -> UPDATE table_name SET col_name = "col_value" WHERE cond;
+
+4. SELECT -> 
+             SYNTAX -> SELECT * FROM table_name;  
+            * -> It represents all the columns of table.
+
+
+            Important operators in select command -> Arithimetic , Logical , Conditional
+            
+   Conditions using WHERE clause in SELCET command -> 
+             
+             Ex. -> SELECT * FROM table_name WHERE name = " " and id = _ ;
+
+   Count() -> Count function is used to count the rows in sql table . For that we have to assign * in Count function like: Count(*)
+              It will give the number of rows. We can use conditions with count functions.
+
+                   ************** Operators ******************
+
+    In SQL there are only two types of operators are used 
+
+    1. Logical -> and or =
+    2. Arithmetic -> + - / * %
+    3. Comparision -> < > <= >= 
+
+                   ************** 24/09/2025 *****************
+
+  AS -> We can create a temprarily column using AS keyword.
+
+  SELECT brand_name, price,(price * 0.18) + price AS Price_with_GST,(price * 0.18) AS GST,(price * 0.09) AS CGST,
+           (price * 0.09) AS SGST FROM smartphones;
+
+  SELECT brand_name, price,price-(price * 0.18) AS Real_Price,(price * 0.18) AS GST,(price * 0.09) AS CGST,
+                   (price * 0.09) AS SGST FROM smartphones;
+
+
+                   *************** 26/09/2025 ****************
+
+like, order by->asc,desc, limit
+ select * from sm where brand_name like '%a';
+ select * from sm where brand_name like 'a%';
+ select * from sm where brand_name like '%a%';
+ select * from sm order by brand_name asc;
+ select * from sm order by brand_name desc;
+ select * from sm limit 1;
+ select * from sm limit x,y; 
+ x-> x denotes how many rows we have to leave. 
+ y-> y denotes how many rows we have to print after x.
