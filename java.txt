@@ -306,9 +306,27 @@ parent class. In case of parent class it call the object class constructor becau
 This Method-> We can call the another constructor using this() method in a class.
 
 
-             ************** Method Overloading *********************
+            ***************** Polymorphism ***************************
 
-When we inherit a parent class so all the methods will be inherit in child class . When we change the content of a method that is also
-present in parent class and all the paremeters, return type and name of method is same so this process is called method overriding.
+Method OverLoading -> When we create two methods with same name but diffrent types and different numbers of 
+                     parameters in a class is called method overloading.
 
-             
+Method Overriding -> When we create a method in child class that same as method in parent class is called method 
+                     overriding.
+
+SUPER Keyword -> The super keyword in Java is a reference variable that is used to refer to immediate parent 
+                 class objects.
+                 
+                 1. Super keyword is used to access the parent class instance variable in child class.
+                 2. Super keyword is used to calling the method of parent class in a child class.
+                 3. Super keyword is used to calling the parent class constructor in child class.
+
+FINAL Keyword -> Final keyword in java is used with variables, method and classes.
+
+                 Final Variable -> When we declare a variable as final so the variable becomes constant and we
+                 cant change the value of this variable.
+
+                 Final Methods -> When we declare a method as final method so it cant be override.
+
+                 Final Class -> When we declare a class as final so it cant be inherited.         
+            
