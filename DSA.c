@@ -1,3 +1,6 @@
+// ******************** Singly LinkedList Operations ********************************
+
+
 #include <stdio.h>
 #include <stdlib.h>
 typedef struct Node
@@ -94,6 +97,116 @@ void delete_beg()
     }
 }
 
+void delete_end()
+{
+    ptr = head;
+    if (head != NULL)
+    {
+        while (ptr->next != NULL)
+        {
+            ptr1 = ptr;
+            ptr = ptr->next;
+        }
+        ptr1->next = NULL;
+        free(ptr);
+    }
+    else
+    {
+        printf("List empty");
+    }
+}
+
+void delete_sp(int pos)
+{
+    if (pos >= 1 && pos <= count)
+    {
+
+        ptr = head;
+        if (pos == 1)
+        {
+            head = head->next;
+        }
+        else
+        {
+            for (int i = 1; i < pos; i++)
+            {
+                ptr1 = ptr;
+                ptr = ptr->next;
+            }
+            ptr1->next = ptr->next;
+        }
+        free(ptr);
+        count--;
+    }
+    else
+    {
+        printf("Invalid Position");
+    }
+}
+
+void update_by_val(int x, int y)
+{
+    ptr = head;
+    if (head != NULL)
+    {
+        if (count == 1 && ptr->data == x)
+        {
+            ptr->data = y;
+        }
+        else
+        {
+            for (int i = 2; i <= count; i++)
+            {
+                ptr = ptr->next;
+                if (x == ptr->data)
+                {
+                    ptr->data = y;
+                    break;
+                }
+            }
+            printf("Invalid value");
+        }
+    }
+    else
+    {
+        printf("Empty");
+    }
+}
+
+void update_by_pos(int pos, int val)
+{
+    int flag = 0;
+    if (pos >= 1 && pos <= count)
+    {
+        ptr = head;
+        if (pos == 1)
+        {
+            ptr->data = val;
+        }
+        else
+        {
+            for (int i = 1; i < pos; i++)
+            {
+                ptr = ptr->next;
+            }
+            ptr->data = val;
+            flag = 1;
+        }
+        if (flag == 1)
+        {
+            printf("Value Updated");
+        }
+        else
+        {
+            printf("Value not found");
+        }
+    }
+    else
+    {
+        printf("Invalid Pos");
+    }
+}
+
 void traverse()
 {
     if (head != NULL)
@@ -116,3 +229,4 @@ int main()
     insert_end(15);
     traverse();
 }
+
