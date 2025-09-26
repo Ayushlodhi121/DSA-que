@@ -1,0 +1,47 @@
+           ******************* INTRO ************************                         
+                                                                                                 ----------------- 24/09/2025
+
+Markup Language -> Languages that used for development purposes like HTML CSS
+Programming Language -> Languages that used to perform tasks, logic and computations.
+
+How a website work-> When we click on something on the website so request goes to the server in the form of HTTP
+                     then response comes from the server in the form of HTML CSS and JS.
+
+                HTTP URL               HTML CSS JS
+        Web ---------------> Server --------------> Web
+               Request                  Response
+
+Client Side Language -> A clinet side language runs on the users computer or browsers .  
+                       Ex. -> HTML CSS JS 
+
+Server Side Language -> Languages that runs on the we server not in the browser.
+                       Ex. -> JAVA (JSP, Spring Boot),PHP, Phython
+
+                                                                                    Translator -> Interpreter
+
+JAVA SCRIPT ->  JavaScript is a high-level, interpreted programming language that is mainly used to make web
+                pages interactive, dynamic, and functional. It is used to add functionality in the HTML page.
+                JavaScript is a client side language because 
+
+                Created by -----> Brondan eich 1995
+                Names of JS -> Mocha, LiveScript, JavaScript
+
+                Script -> A script is simply a block of JavaScript code that tells the browser what to do.
+
+                JS Engine -> JS engine is a computer program that is used to execute javascript code. Its primary 
+                             function is coversion of human redable javascript code into the machine code.
+
+                Browsers and there JS engine -> 1. Chrome -> V8
+                                                2. Mozilla Firefox → SpiderMonkey
+                                                3. Safari (Apple) → JavaScriptCore
+                                                4. Microsoft Edge (Chromium-based) → V8
+                                                5. Brave → V8
+                                                6. UC Browser → V8 (on Android)
+
+
+
+
+                             
+
+                
+        
