@@ -1,18 +1,18 @@
            ******************* INTRO ************************                         
-                                                                                                 ----------------- 24/09/2025
+                                                                                       ----------------- 24/09/2025
 
 Markup Language -> Languages that used for development purposes like HTML CSS
 Programming Language -> Languages that used to perform tasks, logic and computations.
 
-How a website work-> When we click on something on the website so request goes to the server in the form of HTTP
-                     then response comes from the server in the form of HTML CSS and JS.
+How a website work -> When we click on something on the website so request goes to the server in the form of HTTP 
+                      then response comes from the server in the form of HTML CSS and JS.
 
                 HTTP URL               HTML CSS JS
         Web ---------------> Server --------------> Web
                Request                  Response
 
 Client Side Language -> A clinet side language runs on the users computer or browsers .  
-                       Ex. -> HTML CSS JS 
+                       Ex. -> HTML CSS 
 
 Server Side Language -> Languages that runs on the we server not in the browser.
                        Ex. -> JAVA (JSP, Spring Boot),PHP, Phython
@@ -26,7 +26,7 @@ JAVA SCRIPT ->  JavaScript is a high-level, interpreted programming language tha
                 Created by -----> Brondan eich 1995
                 Names of JS -> Mocha, LiveScript, JavaScript
 
-                Script -> A script is simply a block of JavaScript code that tells the browser what to do.
+                Script ->  script is simply a block of JavaScript code that tells the browser what to do.
 
                 JS Engine -> JS engine is a computer program that is used to execute javascript code. Its primary 
                              function is coversion of human redable javascript code into the machine code.
@@ -38,10 +38,21 @@ JAVA SCRIPT ->  JavaScript is a high-level, interpreted programming language tha
                                                 5. Brave → V8
                                                 6. UC Browser → V8 (on Android)
 
+                                                                                                         
+                                                                                        ----------------- 27/09/2025
+There are three Ways of writing the code of JS ->
+                                       1. Inline JS -> Inside the html tags.
+                                                       <h1>Hello <script>Document.write("JS");</script></h1>
 
+                                       2. Internal JS -> Inside the html file inside the script tag.
+                                                        <script>Document.write("JS");</script>
 
+                                       3. External JS -> Inside the another file and we have to link this js file to the html file.
+                                                         <script src="index.js"></script>
 
-                             
-
-                
-        
+Variables -> Variable is a container or memory blocks that is used to store the data.
+             Rules -> 1. Variable names should be starts from alphabets , numbers are not allowed.
+                      2. We cant use special character in variable names.
+                      3. We cant give spaces in the name of variable.
+                      4. Only unserscore allowed in variable name.
+                      5. We cant use predefined keywords name and functions name as variable names.
