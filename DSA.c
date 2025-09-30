@@ -230,3 +230,113 @@ int main()
     traverse();
 }
 
+// ******************** Doubly LinkedList Operations ********************************
+
+#include <stdio.h>
+#include <stdlib.h>
+typedef struct Node
+{
+    int data;
+    struct Node *next, *prev;
+} node;
+node *head = NULL, *ptr, *ptr1;
+int count = 0;
+void insert_beg(int x)
+{
+
+    ptr = (node *)malloc(sizeof(node));
+    ptr->data = x;
+    if (head == NULL)
+    {
+        ptr->next = NULL;
+        ptr->prev = NULL;
+    }
+    else
+    {
+        ptr->next = head;
+        head->prev = ptr;
+        ptr->prev = NULL;
+    }
+    head = ptr;
+    count++;
+}
+
+void insert_end(int x)
+{
+    ptr = (node *)malloc(sizeof(node));
+    ptr->data = x;
+    if (head == NULL)
+    {
+        ptr->prev = ptr->next = NULL;
+        head = ptr;
+    }
+    else
+    {
+        ptr1 = head;
+        while (ptr1->next != NULL)
+        {
+            ptr1 = ptr1->next;
+        }
+        ptr1->next = ptr;
+        ptr->prev = ptr1;
+        ptr->next = NULL;
+    }
+    count++;
+}
+
+void insert_sp(int pos, int x)
+{
+    ptr = (node *)malloc(sizeof(node));
+    if (pos >= 1 && pos <= count + 1)
+    {
+        if (pos == 1)
+        {
+            insert_beg(x);
+        }
+        else if (pos == count + 1)
+        {
+            insert_end(x);
+        }
+        else
+        {
+            ptr->data = x;
+            ptr1 = head;
+            for(int i = 1; i < pos-1; i++){
+                ptr1 = ptr1->next;
+            }
+            ptr->prev = ptr1;
+            ptr->next = ptr1->next;
+            ptr1->next = ptr;
+            ptr->next->prev = ptr;
+        }
+        count++;
+    }
+    else
+    {
+        printf("Invalid Position");
+    }
+}
+
+void traverse()
+{
+    if (head != NULL)
+    {
+        ptr = head;
+        while (ptr->next != NULL)
+        {
+            printf("%d ", ptr->data);
+            ptr = ptr->next;
+        }
+        printf("%d ", ptr->data);
+    }
+}
+
+int main()
+{
+    insert_end(1);
+    insert_end(2);
+    insert_end(3);
+    insert_end(4);
+    insert_sp(4,123);
+    traverse();
+}
