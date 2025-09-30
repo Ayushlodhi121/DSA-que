@@ -330,3 +330,37 @@ FINAL Keyword -> Final keyword in java is used with variables, method and classe
 
                  Final Class -> When we declare a class as final so it cant be inherited.         
             
+POLYMORPHISM -> The word polymorphism is derived from two greek words poly that means many and morphs that means 
+                multiple behaviour.  
+                In java it is a concept by which we can perform single action in multiple ways.
+
+                Advantages -> 1. Method Overloading
+                              2. Code Reusability
+                              3. Flexibility
+                              4. Reduced Code Complexity
+                              5. Interface Implementation
+                              6. Dynamic Method Invocation
+
+      TYPES -> 1. Compile Time -> method overloading .Its called runtime polymorphism because it decides which
+                                  method i have to called at compiletime.
+               2. Run Time or Dynamic Method Dispatch -> method overriding . Its called runtime polymorphism because it decides which
+                                                       object i have to called at runtime.
+
+                     UpCasting -> If the reference variable of Parent class refers to the object of Child class, it is known as upcasting.
+                       Ex. -> Parent p = new child();
+                     DownCasting ->Downcasting Implicitly -> Child c = new Parent(); ----- compile time error
+                                   Downcasting Explicitly -> Child c = (Child)p;
+
+
+
+              ****************** Static and Dynamic Binding ***********************
+
+Static Binding / Early Binding -> When type of the object is decides at compile time.
+Dynamic Binding /Late Binding -> When type of the object is decides at run time.
+
+
+              ******************* Instanceof Keyword ************************
+
+The java instanceof operator is used to test whether the object is an instance of the specified type 
+(class or subclass or interface).
+With the help of this instanceof keyword we can achieve downcasting.                            

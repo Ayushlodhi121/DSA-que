@@ -1,4 +1,4 @@
-// Que 1. Leetcode 1089. Duplicate Zeros
+//  Leetcode 1089. Duplicate Zeros
 //Time Complexity O(n2) Space Complexity O(1)
 
 class Solution {
@@ -16,7 +16,7 @@ class Solution {
     }
 }
 
-// Que 2. Leetcode 977. Squares of a Sorted Array
+//  Leetcode 977. Squares of a Sorted Array
 // Time Complexity O(n)+O(nlogn)=O(nlogn)  Space Complexity O(n)
 
 
@@ -32,7 +32,7 @@ class Solution {
     }
 }
 
-//Que 3. Leetcode 167. Two Sum II - Input Array Is Sorted
+// Leetcode 167. Two Sum II - Input Array Is Sorted
 // Time Complexity: O(n) Space Complexity: O(1)
 
 class Solution {
@@ -54,3 +54,22 @@ class Solution {
         return result;
     }
 }
+
+//Leetcode 1299. Replace Elements with Greatest Element on Right Side
+//Total time complexity: O(n)  Total space complexity: O(n)
+class Solution {
+    public int[] replaceElements(int[] arr) {
+        int arrSize = arr.length;
+        int result[] = new int[arrSize];
+         
+            int max = -1;
+            for (int i = arrSize - 1; i >= 0; i--) {
+                result[i] = max;
+                if (max < arr[i]) {
+                    max = arr[i];
+                }
+            }
+        return result;
+    }
+}
+

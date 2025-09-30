@@ -253,3 +253,7 @@ like, order by->asc,desc, limit
  select * from sm limit x,y; 
  x-> x denotes how many rows we have to leave. 
  y-> y denotes how many rows we have to print after x.
+
+ 
+
+ 
