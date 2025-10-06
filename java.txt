@@ -364,3 +364,20 @@ Dynamic Binding /Late Binding -> When type of the object is decides at run time.
 The java instanceof operator is used to test whether the object is an instance of the specified type 
 (class or subclass or interface).
 With the help of this instanceof keyword we can achieve downcasting.                            
+
+
+               ****************** Abstraction **********************
+
+Abstracation is the process of hiding the internal details from user and showing only the necessary details .
+It shoes what an object does rather that how .
+
+In java we can achive abstraction using two ways ->
+                                                    1.  Using Abstract Class (For Partial Abstraction)
+                                                    2.  Using Interface (For 100% abstraction)
+
+-> Abstract Class -> When we declare a class as abstract so it is called abstract class.In abstract class can have both avstract and not-abstract methods. We cant instanciate an abstract class.
+If we want to access the methods of abstract class so we have to inherit this abstract class. After thet with the help of this class we can access all the methods from abstract class. In this class we have to implement all the methods of its parent abstract class its compulsory.
+
+-> Abstract Method -> If we declarae a method as abstract so first we have to assign that class as abstract. 
+We can only declare abstract methods in abstract class. It can be overloaded but it cant be overrided inside a not abstract class . Because we can only override another abstract class abstract methods inside a abstract class.
+

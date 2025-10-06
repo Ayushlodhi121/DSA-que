@@ -56,3 +56,9 @@ Variables -> Variable is a container or memory blocks that is used to store the 
                       3. We cant give spaces in the name of variable.
                       4. Only unserscore allowed in variable name.
                       5. We cant use predefined keywords name and functions name as variable names.
+
+           Types of Variables -> Var , Let , Const
+                                1. Var -> The var keyword is used to declare a variable. It has a function-scoped  or globally-scoped behaviour. It can we redefined or redeclare inside this functions.
+                                2. Let -> let is a block scope variable and it can be reassign inside a function but cannot be redeclare.
+                                3. Const -> Const is a block scope variable . It cant be reassign or redeclare.
+                                

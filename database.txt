@@ -232,7 +232,7 @@ Data Manipulation Language
 
                    ************** 24/09/2025 *****************
 
-  AS -> We can create a temprarily column using AS keyword.
+  AS -> We can create a temporarily column using AS keyword.
 
   SELECT brand_name, price,(price * 0.18) + price AS Price_with_GST,(price * 0.18) AS GST,(price * 0.09) AS CGST,
            (price * 0.09) AS SGST FROM smartphones;
@@ -254,6 +254,28 @@ like, order by->asc,desc, limit
  x-> x denotes how many rows we have to leave. 
  y-> y denotes how many rows we have to print after x.
 
- 
 
- 
+                    **************** 3/10/2025 ****************
+     
+SQL Functions
+
+SQL functions are built in programs that are used to perform different operations on the databases.
+
+There are two type-> 
+                    1. Aggregate Function
+                    2. Scaler Function
+          
+Aggregate Functions -> The sql Aggregate functions operate on a data group and return a singular output.
+Ex. -> avg(), sum(), distinct(), max(), min(), count(), first(), last()
+
+Scaler Functions -> The sql scaler functions are built in functions that operate on a single value and return a single value.
+Ex. -> ucase(), lcase(), mid(), length(), round(), now(), format()
+
+                   ************** 6/10/2025 *********************
+
+Group By -> The group by clause is used to arrange identical data in groups. It is used with aggregate functions to perform calculations on the grouped data .
+
+Q. Find the top five average price smartphones ?
+-> select brand_name avg(price) as avg_price from smartphones 
+             group by brand_name order by avg_price desc limit 5;
+
