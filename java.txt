@@ -375,9 +375,26 @@ In java we can achive abstraction using two ways ->
                                                     1.  Using Abstract Class (For Partial Abstraction)
                                                     2.  Using Interface (For 100% abstraction)
 
+ABSRACT KEYWORD -------
+
 -> Abstract Class -> When we declare a class as abstract so it is called abstract class.In abstract class can have both avstract and not-abstract methods. We cant instanciate an abstract class.
 If we want to access the methods of abstract class so we have to inherit this abstract class. After thet with the help of this class we can access all the methods from abstract class. In this class we have to implement all the methods of its parent abstract class its compulsory.
 
 -> Abstract Method -> If we declarae a method as abstract so first we have to assign that class as abstract. 
 We can only declare abstract methods in abstract class. It can be overloaded but it cant be overrided inside a not abstract class . Because we can only override another abstract class abstract methods inside a abstract class.
 
+
+INTERFACES ---------
+
+-> Interface in java is used to achieve the abstraction and multiple inheritance. In interfaces all the methods are abstract and we cant create the method body inside the interfaces. In interfaces all the variables are static and final by default and we have to initialize it.
+We cant create constructor of an interface because we cant instantiate an interface.
+If we override a interface method in a class so we have to declare it public because all the methods of an interfaces are public by default.
+
+ALl the methods in interface public and abstract by default and variables are public , static, and final by default.
+
+          class <------------------- class
+                    extends
+          interface <------------------- class
+                       implements
+          interface <------------------- interface
+                       extends
